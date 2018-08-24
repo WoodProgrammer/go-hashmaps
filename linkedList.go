@@ -27,21 +27,11 @@ func (list *List ) setToTheList(data *Data ){
   list.length++
 }
 
-func (list *List ) getFromList() {
+func (list *List ) getFromList() { //For Deubgging no IDE :(
 
   for list.start != nil {
     fmt.Println(list.start.value)
     list.start = list.start.next;
   }
 
-}
-
-
-func main(){
-
-  list := &List{}
-  data := Data {
-    value: "Kobrake123"
-  }
-  
 }
